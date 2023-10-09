@@ -1,0 +1,467 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C12CDA122A3B50010038B445 /* ShellyHomeKitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12CDA112A3B50010038B445 /* ShellyHomeKitApp.swift */; };
+		C12CDA142A3B50010038B445 /* ShellyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12CDA132A3B50010038B445 /* ShellyList.swift */; };
+		C12CDA162A3B50040038B445 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C12CDA152A3B50040038B445 /* Assets.xcassets */; };
+		C12CDA212A3B51980038B445 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C12CDA202A3B51980038B445 /* Alamofire */; };
+		C14279752A5A80AF007A8A90 /* ShellyUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14279742A5A80AF007A8A90 /* ShellyUtility.swift */; };
+		C14279772A5A8D4B007A8A90 /* Shelly.rpc.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14279762A5A8D4B007A8A90 /* Shelly.rpc.swift */; };
+		C142797A2A5B0168007A8A90 /* Shelly.SetConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14279792A5B0168007A8A90 /* Shelly.SetConfig.swift */; };
+		C142797C2A5B01B0007A8A90 /* Shelly.GetInfoExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C142797B2A5B01B0007A8A90 /* Shelly.GetInfoExt.swift */; };
+		C142797E2A5B01E7007A8A90 /* Shelly.SetState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C142797D2A5B01E7007A8A90 /* Shelly.SetState.swift */; };
+		C14279802A5B0264007A8A90 /* HAP.Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = C142797F2A5B0264007A8A90 /* HAP.Setup.swift */; };
+		C14279822A5B0782007A8A90 /* Sys.Reboot.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14279812A5B0782007A8A90 /* Sys.Reboot.swift */; };
+		C14279842A5B0A06007A8A90 /* HAP.Reset.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14279832A5B0A06007A8A90 /* HAP.Reset.swift */; };
+		C14279862A5B0B61007A8A90 /* Shelly.SetWifiConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14279852A5B0B61007A8A90 /* Shelly.SetWifiConfig.swift */; };
+		C142798B2A5B0D96007A8A90 /* Shelly1Switch.swift in Sources */ = {isa = PBXBuildFile; fileRef = C142798A2A5B0D96007A8A90 /* Shelly1Switch.swift */; };
+		C142798D2A5B0DBA007A8A90 /* Shelly1GarageOpener.swift in Sources */ = {isa = PBXBuildFile; fileRef = C142798C2A5B0DBA007A8A90 /* Shelly1GarageOpener.swift */; };
+		C14997F02A5BE6D300648713 /* Shelly.SetAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14997EF2A5BE6D300648713 /* Shelly.SetAuth.swift */; };
+		C15610E12A4325A70023C19E /* ShellyGeneralSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15610E02A4325A70023C19E /* ShellyGeneralSettings.swift */; };
+		C15610E32A4328200023C19E /* ShellyComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15610E22A4328200023C19E /* ShellyComponents.swift */; };
+		C15610E52A432DD60023C19E /* ShellyHomeKitSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15610E42A432DD60023C19E /* ShellyHomeKitSettings.swift */; };
+		C15610E72A432EB70023C19E /* ShellyWiFiSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15610E62A432EB70023C19E /* ShellyWiFiSettings.swift */; };
+		C15610E92A432FCB0023C19E /* ShellySecuritySettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15610E82A432FCB0023C19E /* ShellySecuritySettings.swift */; };
+		C15610EB2A432FE90023C19E /* ShellySystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15610EA2A432FE90023C19E /* ShellySystem.swift */; };
+		C15610ED2A43300B0023C19E /* ShellyFirmware.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15610EC2A43300B0023C19E /* ShellyFirmware.swift */; };
+		C15C25E22A534E030083E3BF /* ShellyDetailShellyCloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15C25E12A534E030083E3BF /* ShellyDetailShellyCloud.swift */; };
+		C1645B102A3CB8150076D69C /* ShellyDetailHomekit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1645B0F2A3CB8150076D69C /* ShellyDetailHomekit.swift */; };
+		C19C00712A3DECAB00BF7EC2 /* ShellyEntities.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19C00702A3DECAB00BF7EC2 /* ShellyEntities.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C12CDA0E2A3B50010038B445 /* ShellyHomeKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShellyHomeKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C12CDA112A3B50010038B445 /* ShellyHomeKitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShellyHomeKitApp.swift; sourceTree = "<group>"; };
+		C12CDA132A3B50010038B445 /* ShellyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShellyList.swift; sourceTree = "<group>"; };
+		C12CDA152A3B50040038B445 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C14279742A5A80AF007A8A90 /* ShellyUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShellyUtility.swift; sourceTree = "<group>"; };
+		C14279762A5A8D4B007A8A90 /* Shelly.rpc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shelly.rpc.swift; sourceTree = "<group>"; };
+		C14279792A5B0168007A8A90 /* Shelly.SetConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shelly.SetConfig.swift; sourceTree = "<group>"; };
+		C142797B2A5B01B0007A8A90 /* Shelly.GetInfoExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shelly.GetInfoExt.swift; sourceTree = "<group>"; };
+		C142797D2A5B01E7007A8A90 /* Shelly.SetState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shelly.SetState.swift; sourceTree = "<group>"; };
+		C142797F2A5B0264007A8A90 /* HAP.Setup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HAP.Setup.swift; sourceTree = "<group>"; };
+		C14279812A5B0782007A8A90 /* Sys.Reboot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sys.Reboot.swift; sourceTree = "<group>"; };
+		C14279832A5B0A06007A8A90 /* HAP.Reset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HAP.Reset.swift; sourceTree = "<group>"; };
+		C14279852A5B0B61007A8A90 /* Shelly.SetWifiConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shelly.SetWifiConfig.swift; sourceTree = "<group>"; };
+		C142798A2A5B0D96007A8A90 /* Shelly1Switch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shelly1Switch.swift; sourceTree = "<group>"; };
+		C142798C2A5B0DBA007A8A90 /* Shelly1GarageOpener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shelly1GarageOpener.swift; sourceTree = "<group>"; };
+		C14997EF2A5BE6D300648713 /* Shelly.SetAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shelly.SetAuth.swift; sourceTree = "<group>"; };
+		C15610E02A4325A70023C19E /* ShellyGeneralSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShellyGeneralSettings.swift; sourceTree = "<group>"; };
+		C15610E22A4328200023C19E /* ShellyComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShellyComponents.swift; sourceTree = "<group>"; };
+		C15610E42A432DD60023C19E /* ShellyHomeKitSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShellyHomeKitSettings.swift; sourceTree = "<group>"; };
+		C15610E62A432EB70023C19E /* ShellyWiFiSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShellyWiFiSettings.swift; sourceTree = "<group>"; };
+		C15610E82A432FCB0023C19E /* ShellySecuritySettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShellySecuritySettings.swift; sourceTree = "<group>"; };
+		C15610EA2A432FE90023C19E /* ShellySystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShellySystem.swift; sourceTree = "<group>"; };
+		C15610EC2A43300B0023C19E /* ShellyFirmware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShellyFirmware.swift; sourceTree = "<group>"; };
+		C15C25E12A534E030083E3BF /* ShellyDetailShellyCloud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShellyDetailShellyCloud.swift; sourceTree = "<group>"; };
+		C1645B0F2A3CB8150076D69C /* ShellyDetailHomekit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShellyDetailHomekit.swift; sourceTree = "<group>"; };
+		C19C00702A3DECAB00BF7EC2 /* ShellyEntities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShellyEntities.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C12CDA0B2A3B50010038B445 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C12CDA212A3B51980038B445 /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C12CDA052A3B50010038B445 = {
+			isa = PBXGroup;
+			children = (
+				C12CDA102A3B50010038B445 /* ShellyHomeKit */,
+				C12CDA0F2A3B50010038B445 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C12CDA0F2A3B50010038B445 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C12CDA0E2A3B50010038B445 /* ShellyHomeKit.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C12CDA102A3B50010038B445 /* ShellyHomeKit */ = {
+			isa = PBXGroup;
+			children = (
+				C12CDA152A3B50040038B445 /* Assets.xcassets */,
+				C14279782A5B0111007A8A90 /* rpc */,
+				C19C00702A3DECAB00BF7EC2 /* ShellyEntities.swift */,
+				C14279742A5A80AF007A8A90 /* ShellyUtility.swift */,
+				C12CDA112A3B50010038B445 /* ShellyHomeKitApp.swift */,
+				C12CDA132A3B50010038B445 /* ShellyList.swift */,
+				C1645B0F2A3CB8150076D69C /* ShellyDetailHomekit.swift */,
+				C15C25E12A534E030083E3BF /* ShellyDetailShellyCloud.swift */,
+				C15610E02A4325A70023C19E /* ShellyGeneralSettings.swift */,
+				C14279892A5B0D65007A8A90 /* ShellyComponents */,
+				C15610E42A432DD60023C19E /* ShellyHomeKitSettings.swift */,
+				C15610E62A432EB70023C19E /* ShellyWiFiSettings.swift */,
+				C15610E82A432FCB0023C19E /* ShellySecuritySettings.swift */,
+				C15610EA2A432FE90023C19E /* ShellySystem.swift */,
+				C15610EC2A43300B0023C19E /* ShellyFirmware.swift */,
+			);
+			path = ShellyHomeKit;
+			sourceTree = "<group>";
+		};
+		C14279782A5B0111007A8A90 /* rpc */ = {
+			isa = PBXGroup;
+			children = (
+				C14279832A5B0A06007A8A90 /* HAP.Reset.swift */,
+				C142797F2A5B0264007A8A90 /* HAP.Setup.swift */,
+				C142797B2A5B01B0007A8A90 /* Shelly.GetInfoExt.swift */,
+				C14279762A5A8D4B007A8A90 /* Shelly.rpc.swift */,
+				C14997EF2A5BE6D300648713 /* Shelly.SetAuth.swift */,
+				C14279792A5B0168007A8A90 /* Shelly.SetConfig.swift */,
+				C142797D2A5B01E7007A8A90 /* Shelly.SetState.swift */,
+				C14279852A5B0B61007A8A90 /* Shelly.SetWifiConfig.swift */,
+				C14279812A5B0782007A8A90 /* Sys.Reboot.swift */,
+			);
+			path = rpc;
+			sourceTree = "<group>";
+		};
+		C14279892A5B0D65007A8A90 /* ShellyComponents */ = {
+			isa = PBXGroup;
+			children = (
+				C15610E22A4328200023C19E /* ShellyComponents.swift */,
+				C142798A2A5B0D96007A8A90 /* Shelly1Switch.swift */,
+				C142798C2A5B0DBA007A8A90 /* Shelly1GarageOpener.swift */,
+			);
+			path = ShellyComponents;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C12CDA0D2A3B50010038B445 /* ShellyHomeKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C12CDA1C2A3B50040038B445 /* Build configuration list for PBXNativeTarget "ShellyHomeKit" */;
+			buildPhases = (
+				C12CDA0A2A3B50010038B445 /* Sources */,
+				C12CDA0B2A3B50010038B445 /* Frameworks */,
+				C12CDA0C2A3B50010038B445 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShellyHomeKit;
+			packageProductDependencies = (
+				C12CDA202A3B51980038B445 /* Alamofire */,
+			);
+			productName = ShellyHomeKit;
+			productReference = C12CDA0E2A3B50010038B445 /* ShellyHomeKit.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C12CDA062A3B50010038B445 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					C12CDA0D2A3B50010038B445 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = C12CDA092A3B50010038B445 /* Build configuration list for PBXProject "ShellyHomeKit" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C12CDA052A3B50010038B445;
+			packageReferences = (
+				C12CDA1F2A3B51980038B445 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			productRefGroup = C12CDA0F2A3B50010038B445 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C12CDA0D2A3B50010038B445 /* ShellyHomeKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C12CDA0C2A3B50010038B445 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C12CDA162A3B50040038B445 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C12CDA0A2A3B50010038B445 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C142798B2A5B0D96007A8A90 /* Shelly1Switch.swift in Sources */,
+				C14279842A5B0A06007A8A90 /* HAP.Reset.swift in Sources */,
+				C15610E32A4328200023C19E /* ShellyComponents.swift in Sources */,
+				C1645B102A3CB8150076D69C /* ShellyDetailHomekit.swift in Sources */,
+				C15610ED2A43300B0023C19E /* ShellyFirmware.swift in Sources */,
+				C15610E92A432FCB0023C19E /* ShellySecuritySettings.swift in Sources */,
+				C15C25E22A534E030083E3BF /* ShellyDetailShellyCloud.swift in Sources */,
+				C142798D2A5B0DBA007A8A90 /* Shelly1GarageOpener.swift in Sources */,
+				C15610E12A4325A70023C19E /* ShellyGeneralSettings.swift in Sources */,
+				C19C00712A3DECAB00BF7EC2 /* ShellyEntities.swift in Sources */,
+				C14279822A5B0782007A8A90 /* Sys.Reboot.swift in Sources */,
+				C15610E72A432EB70023C19E /* ShellyWiFiSettings.swift in Sources */,
+				C14997F02A5BE6D300648713 /* Shelly.SetAuth.swift in Sources */,
+				C142797E2A5B01E7007A8A90 /* Shelly.SetState.swift in Sources */,
+				C14279752A5A80AF007A8A90 /* ShellyUtility.swift in Sources */,
+				C14279862A5B0B61007A8A90 /* Shelly.SetWifiConfig.swift in Sources */,
+				C14279802A5B0264007A8A90 /* HAP.Setup.swift in Sources */,
+				C12CDA142A3B50010038B445 /* ShellyList.swift in Sources */,
+				C15610E52A432DD60023C19E /* ShellyHomeKitSettings.swift in Sources */,
+				C14279772A5A8D4B007A8A90 /* Shelly.rpc.swift in Sources */,
+				C142797A2A5B0168007A8A90 /* Shelly.SetConfig.swift in Sources */,
+				C12CDA122A3B50010038B445 /* ShellyHomeKitApp.swift in Sources */,
+				C142797C2A5B01B0007A8A90 /* Shelly.GetInfoExt.swift in Sources */,
+				C15610EB2A432FE90023C19E /* ShellySystem.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C12CDA1A2A3B50040038B445 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C12CDA1B2A3B50040038B445 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C12CDA1D2A3B50040038B445 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ShellyHomeKit/Preview Content\"";
+				DEVELOPMENT_TEAM = Y9B7BDTGP3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = DavideTommasin.ShellyHomeKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C12CDA1E2A3B50040038B445 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ShellyHomeKit/Preview Content\"";
+				DEVELOPMENT_TEAM = Y9B7BDTGP3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = DavideTommasin.ShellyHomeKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C12CDA092A3B50010038B445 /* Build configuration list for PBXProject "ShellyHomeKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C12CDA1A2A3B50040038B445 /* Debug */,
+				C12CDA1B2A3B50040038B445 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C12CDA1C2A3B50040038B445 /* Build configuration list for PBXNativeTarget "ShellyHomeKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C12CDA1D2A3B50040038B445 /* Debug */,
+				C12CDA1E2A3B50040038B445 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C12CDA1F2A3B51980038B445 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C12CDA202A3B51980038B445 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C12CDA1F2A3B51980038B445 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = C12CDA062A3B50010038B445 /* Project object */;
+}
